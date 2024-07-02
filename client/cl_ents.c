@@ -1298,11 +1298,10 @@ void CL_AddViewWeapon (player_state_t *ps, player_state_t *ops)
 	// allow the gun to be completely removed
 	if (!cl_gun->value)
 		return;
-#ifdef 0
+
 	// don't draw gun if in wide angle view
-	if (ps->fov > 90)
-		return;
-#endif
+	/*if (ps->fov > 90)
+		return;*/
 
 	memset (&gun, 0, sizeof(gun));
 
